@@ -1,0 +1,296 @@
+/*
+ * Author: Torben
+ * URL: http://greaterequals.com
+ *
+ * Project Name: Tidings
+ * URL: http://tidings-app.com
+ * Version: 1.0
+ */
+/* App Colors:
+    <!-- Main color scheme for Tidings:-->
+    <color name="tidings_dark_grey">#3E4651</color>
+    <color name="tidings_light_grey">#646464</color>
+    <color name="tidings_grey">#ff474747</color>
+    <color name="tidings_blue">#285A64</color>
+    <color name="tidings_orange">#D13834</color>
+    <color name="tidings_light_orange">#bfff3d35</color>
+    <color name="tidings_white">#F0F0F0</color>
+    <color name="tidings_light_blue">#19D7FD</color>
+    <color name="tidings_pink">#FD1978</color>
+    <color name="tidings_green">#00CA7C</color>
+    <color name="tidings_light_green">#3a00e647</color>
+ */
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #666;
+    margin-top: 10px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+
+.centered {
+    text-align: center
+}
+
+.mt {
+    margin-top: 30px;
+}
+
+.mb {
+    margin-bottom: 50px;
+}
+
+.mtb {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ptb {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 100%;
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #2B2E31;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #2B2E31;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transition: background-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, color .4s linear;
+    transition: background-color .4s linear, color .4s linear;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #696E74;
+}
+
+/* HEADER CONFIGURATION */
+#header {
+    background: #f2f9fe;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+    color: #474747;
+}
+
+#header h2 {
+    color: #D13834;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+#header h3 {
+    color: #285A64;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+#header h4 {
+    color: #646464;
+}
+
+#header hr {
+    width: 20%;
+    border-bottom: 3px solid #ccc;
+}
+
+.btn-trans {
+    background: transparent;
+    color: #636c6c;
+    font-weight: 700;
+    border: 3px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.btn-trans:hover {
+    background: white;
+    color: #444;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    min-height: 400px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 50px;
+}
+
+.testimonials p {
+    color: #8c9494;
+    font-style: italic;
+}
+
+/* SUBSCRIBE FORM*/
+/*#subscribe {
+    background: #f3f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}*/
+
+#subscribe input {
+    font-size: 18px;
+    min-height: 60px;
+    border-radius: 40px;
+    line-height: 24px;
+    padding: 16px 30px 20px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #fff;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+#subscribe .subscribe-input {
+
+    float: left;
+    width: 95%;
+    text-align: left;
+    margin-top: 5px;
+    box-shadow: 0px 0px 2px 1px #888888;
+}
+
+#subscribe .subscribe-submit {
+    position: absolute;
+    right: 0;
+    padding-left: 28px;
+    box-shadow: 0px 0px 2px 1px #888888;
+
+}
+
+.btn-green2 {
+    color: #fff;
+    font-size: 18px;
+    min-height: 70px;
+    border-radius: 40px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    padding: 16px 30px 20px;
+    z-index: 1;
+    position: relative;
+    border: none;
+    background: #285A64;
+}
+
+.btn-green2:hover {
+    background: #D13834;
+    color: white;
+}
+
+/* FOOTER*/
+#footer {
+    background: #2d312f;
+    color: #8c9494;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer h4 {
+    color: #8c9494;
+}
+
+#footer a {
+    color: #5dca88;
+}
+
+#footer a:hover {
+    color: #8c9494;
+}
+
+.btn-primary {
+    background-color: #285A64
+}
+
+#mc-embedded-subscribe-form {
+    margin-top: 10px;
+}
+
+.marked-red {
+    color: #D13834 !important;
+}
+
+.extra-padding-bottom {
+    padding-bottom: 20pt;
+}
